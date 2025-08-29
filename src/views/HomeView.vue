@@ -1,6 +1,5 @@
 <template>
   <div class="container py-4">
-    <h1 class="mb-4 text-center">Agenda Cultural</h1>
 
     <!-- Filtar por nombre y categoría -->
     <div class="d-flex gap-2 mb-4">
@@ -21,6 +20,7 @@
         style="height: 350px"
         default-view="month"
         hide-view-selector
+        locale="es"
         :time="false"
         :events="calendarEvents"
         @cell-click="selectDate"
